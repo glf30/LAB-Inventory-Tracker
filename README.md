@@ -24,11 +24,10 @@ Your API should support the following actions:
 1. **Create** a new item in the inventory.  
 2. **Read** all items in the inventory.  
 3. **Update** an item (e.g. change quantity or price).  
-4. **Delete** an item from the inventory.  
+4. **Delete** an item from the inventory.
+5. Add the ability to filter items by `category`.  
+6. Add the ability to view only the `name` and `price` of items.  
+7. Add a route to search items by `name`.  
 
 ---
 
-## Stretch Goals (Optional)
-- Add the ability to filter items by `category`.  
-- Add the ability to view only the `name` and `price` of items.  
-- Add a route to search items by `name`.  
