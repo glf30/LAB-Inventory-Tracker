@@ -1,4 +1,4 @@
-# Assignment 4A. Inventory Tracker API
+# Assignment - Inventory Tracker API
 
 ## Goals
 - Create an API connected to a MongoDB database.  
