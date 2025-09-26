@@ -11,7 +11,7 @@
 You are tasked with building an **Inventory Tracker API** for a small shop. The purpose is to manage the items the shop has in stock.
 
 Your database will need one collection called `items` with a schema that includes:
-- `name` (String, required, e.g. "Notebook", "iPad")  
+- `name` (String, required, unique, e.g. "Notebook", "iPad")  
 - `category` (String, e.g. "Writing", "Electronics")  
 - `quantity` (Number, default: 0)  
 - `price` (Number, required)  
