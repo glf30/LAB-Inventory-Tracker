@@ -1,34 +1,45 @@
 # Assignment - Inventory Tracker API
 
 ## Goals
-- Create an API connected to a MongoDB database.  
-- Allow users to **Create, Read, Update, and Delete** inventory items.  
-- Practice filtering and limiting returned fields from documents.  
+- Create an API connected to a MongoDB database.
+- Allow users to **Create, Read, Update, and Delete** inventory items.
+- Practice filtering and limiting returned fields from documents.
+- Practice working with referenced relationships in MongoDB.
 
 ---
 
 ## Scenario
 You are tasked with building an **Inventory Tracker API** for a small shop. The purpose is to manage the items the shop has in stock.
 
-Your database will need one collection called `items` with a schema that includes:
-- `name` (String, required, unique, e.g. "Notebook", "iPad")  
-- `category` (String, e.g. "Writing", "Electronics")  
-- `quantity` (Number, default: 0)  
-- `price` (Number, required)  
+The shop purchases its inventory from different suppliers. Each inventory item should be associated with a single supplier, and each supplier may provide many different inventory items.
+
+Your database will have two collections.
+
+### `suppliers`
+- `name` (String, required, unique)
+- `email` (String)
+- `phone` (String)
+
+### `items`
+- `name` (String, required, unique, e.g. "Notebook", "iPad")
+- `category` (String, e.g. "Writing", "Electronics")
+- `quantity` (Number, default: 0)
+- `price` (Number, required)
+- `supplier` (ObjectId referencing a Supplier)
 
 ---
 
 ## API Requirements
-Your API should support the following actions:
 
-1. **Create** a new item in the inventory.  
-2. **Read** all items in the inventory.
-3. **Read** a single item in the inventory given its ID.
-4. **Update** an item given its ID.  
-5. **Delete** an item given its ID.
-6. Add the ability to filter items by `category`.  
-7. Add the ability to view only the `name` and `price` of items.  
-8. Add a route to search items by `name`.  
-
----
-
+1. **Create** a new supplier.
+2. **Read** all suppliers.
+3. **Create** a new item in the inventory and associate it with a supplier.
+4. **Read** all items in the inventory.
+5. **Read** a single item in the inventory given its ID.
+6. **Update** an item given its ID.
+7. **Delete** an item given its ID.
+8. Add the ability to filter items by `category`.
+9. Add the ability to view only the `name` and `price` of items.
+10. Add a route to search items by `name`.
+11. When retrieving inventory items, populate the supplier information.
+12. Add a route to retrieve all items supplied by a specific supplier.
