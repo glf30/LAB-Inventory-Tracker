@@ -43,3 +43,6 @@ Your database will have two collections.
 10. Add a route to search items by `name`.  This should be done using query parameters. Any item that includes the search query in their name should appear in the result.
 11. When retrieving inventory items, populate the supplier information.
 12. Add a route to retrieve all items supplied by a specific supplier.
+
+
+Try to make incremental commits to GitHub as you go.  This is a good chance to practice using the service like a software developer would!
