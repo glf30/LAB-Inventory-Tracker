@@ -25,7 +25,7 @@ Your database will have two collections.
 - `category` (String, e.g. "Writing", "Electronics")
 - `quantity` (Number, default: 0)
 - `price` (Number, required)
-- `supplier` (ObjectId referencing a Supplier)
+- `supplier` (ObjectId referencing a Supplier, required)
 
 ---
 
