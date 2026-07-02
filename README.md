@@ -40,6 +40,6 @@ Your database will have two collections.
 7. **Delete** an item given its ID.
 8. Add the ability to filter items by `category`.
 9. Add the ability to view only the `name` and `price` of items.  This could be a separate route or you could use query parameters!
-10. Add a route to search items by `name`.  This should be done using query parameters. Any item that includes the search query in their name should appear in the result
+10. Add a route to search items by `name`.  This should be done using query parameters. Any item that includes the search query in their name should appear in the result.
 11. When retrieving inventory items, populate the supplier information.
 12. Add a route to retrieve all items supplied by a specific supplier.
